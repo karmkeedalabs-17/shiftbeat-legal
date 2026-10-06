@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shiftbeat — Privacy Policy</title>
+<style>
+  :root{ --ink:#14181d; --soft:#39434e; --muted:#697787; --line:#d5dce3; --accent:#2c5fa8; }
+  *{box-sizing:border-box}
+  body{margin:0;background:#fff;color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
+  h1{font-size:30px;line-height:1.15;margin:0 0 6px;letter-spacing:-.02em}
+  .meta{color:var(--muted);font-size:14px;margin:0 0 28px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+  h2{font-size:18px;margin:32px 0 8px;letter-spacing:-.01em}
+  p{margin:0 0 12px;color:var(--soft)}
+  ul{margin:0 0 12px;padding-left:20px;color:var(--soft)}
+  li{margin-bottom:7px}
+  .lead{font-size:17px;color:var(--ink)}
+  a{color:var(--accent)}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Shiftbeat — Privacy Policy</h1>
+<p class="meta">Last updated 6 October 2026 · applies to the Android app <code>com.karmkeeda.shiftbeat</code></p>
+
+<p class="lead">Shiftbeat does not collect, transmit or sell any personal data. There is no account,
+no sign-in, no analytics and no advertising. The app has no server to send anything to.</p>
+
+<h2>Data we collect</h2>
+<p><strong>None.</strong> We operate no servers and receive nothing from your device.</p>
+
+<h2>Data stored on your device</h2>
+<p>The following is saved in the app's private storage on your phone and nowhere else:</p>
+<ul>
+  <li>Your rotation pattern and its start date</li>
+  <li>Any individual days you edit by hand, including notes you type</li>
+  <li>Your pay rules (hourly rate, overtime and night-differential settings, currency)</li>
+  <li>Your alarm settings</li>
+  <li>A short log of alarms that have rung, so the app can show you they worked</li>
+</ul>
+
+<h2>Network access</h2>
+<p>The app does not request the <code>INTERNET</code> permission, so it cannot send anything over
+the internet.</p>
+
+<h2>Permissions and why each is needed</h2>
+<ul>
+  <li><strong>Notifications</strong> — to show the alarm before a shift.</li>
+  <li><strong>Exact alarms</strong> (<code>USE_EXACT_ALARM</code>) — so the reminder fires at the
+      minute you set. Shiftbeat is a calendar app whose core function is timed shift reminders,
+      which is the permitted use of this permission.</li>
+  <li><strong>Full-screen intent</strong> — to show the alarm over the lock screen, as a clock app does.</li>
+  <li><strong>Run at startup</strong> — Android clears scheduled alarms when the phone restarts;
+      this lets the app restore them.</li>
+  <li><strong>Vibrate and wake lock</strong> — to sound the alarm and wake the screen.</li>
+  <li><strong>View network connections</strong> (<code>ACCESS_NETWORK_STATE</code>) and
+      <strong>foreground service</strong> (<code>FOREGROUND_SERVICE</code>) — Shiftbeat does not
+      ask for either. They are declared by <code>androidx.work</code>, a Google library that the
+      home-screen widget depends on, and are merged into the app automatically. Shiftbeat never
+      calls them, and because the app has no internet permission they cannot be used to send
+      anything off the device.</li>
+  <li><strong>Google Play license check</strong> (<code>CHECK_LICENSE</code>) — Shiftbeat does not
+      ask for this either. Google Play adds it when it applies its automatic protection, so the
+      app can ask the Play Store app on your phone whether this copy was installed from Google
+      Play. None of your schedule, pay or notes is involved, and it does not give Shiftbeat
+      internet access.</li>
+</ul>
+
+<h2>Backups you create</h2>
+<p>If you tap “Save backup file”, the app writes your data to a location you choose. Where that file
+then travels is your decision and outside the app's control.</p>
+
+<h2>Children</h2>
+<p>Shiftbeat is a tool for working adults. It is not directed at children and collects no data
+from anyone.</p>
+
+<h2>Third parties</h2>
+<p>The app contains no advertising SDK, no analytics SDK and no crash-reporting SDK. No data is
+shared with anyone, because none is collected.</p>
+
+<h2>Deleting your data</h2>
+<p>Uninstalling the app, or using Android's “Clear storage” option, permanently removes everything
+it holds. There is nothing stored elsewhere for us to delete.</p>
+
+<h2>Changes to this policy</h2>
+<p>This policy describes the version of Shiftbeat dated at the top of this page. A future
+version may work differently &mdash; for example by showing advertising, which would require
+network access and would mean an advertising provider receives data from your device. If that
+happens, this policy and the Play Store Data safety section will both be updated
+<strong>before</strong> that version is released, and the date at the top will change. Your
+schedule, pay rules and edited days would remain on your device either way.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:karmkeedalabs@gmail.com">karmkeedalabs@gmail.com</a></p>
+
+<footer>Shiftbeat is an independent app. Android and Google Play are trademarks of Google LLC.</footer>
+
+</div>
+</body>
+</html>
